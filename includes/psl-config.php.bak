@@ -1,6 +1,7 @@
 <?php
 /**
  * These are the database login details
+ * Remove the .bak extention
  */  
 define("HOST", "use a ip or host(domain) name here");     // The host you want to connect to.
 define("USER", "database user account name");    // The database username. 
