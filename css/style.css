@@ -1,0 +1,46 @@
+
+body {
+	background-color: #121211;
+	color: #DDDDD1;
+	font-size: 16px;
+}
+.btn {
+	    background-color: transparent;
+    background-image: linear-gradient(to bottom, #2A2A2A 0px, #111 100%);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+	font-size: 20px;
+	color: #9BC43A;
+}
+.btn:hover {
+	background: transparent linear-gradient(to bottom, #357BF2 0px, #306ED9 100%) repeat scroll 0% 0%;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #357BF2 0px, #306ED9 100%);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+	font-size: 20px;
+	color: #9BC43A;
+}
+.container-fluid {
+	background-color: #2B2B2B;
+}
+
+.question {
+	padding: 25px;
+}
+
+.navbar {
+	color: #9BC43A;
+}
+
+.btn{
+	margin:5px;
+}

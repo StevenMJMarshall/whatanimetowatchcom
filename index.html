@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>WATW</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/config.js"></script>
+</head>
+
+<body ng-app="watw" ng-controller="watwCtrl">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">What Anime To Watch</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#developer">Developer</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-danger">
+        <strong>Warning</strong> This site is still being worked on. Right now only the first options work.
+    </div>
+    <ng-view></ng-view>
+</body>
+
+</html>
