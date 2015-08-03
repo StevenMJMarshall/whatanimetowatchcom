@@ -22,9 +22,10 @@ sec_session_start();
             <div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#developer">Developer</a></li>
-                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#adminQA">Questions and Answers</a></li>
+                    <li><a href="#adminAnime">List Anime</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#stats">System Stats</a></li>
                 </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span>Welcome <?php echo htmlentities($_SESSION['username']); ?></a></li>

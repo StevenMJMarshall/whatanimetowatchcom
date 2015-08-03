@@ -1,4 +1,4 @@
-app.controller('QuestionsCtrl', function ($scope, $http) {
+app.controller('AnimeCtrl', function ($scope, $http) {
 	$scope.CurrentQuestionID = 1
 	$http.get("data/getQuestions.php")
 	.success(function(responce) {$scope.questions = responce});
