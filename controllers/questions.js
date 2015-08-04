@@ -1,12 +1,20 @@
 app.controller('QuestionsCtrl', function ($scope, $http) {
-	$scope.CurrentQuestionID = 1
-	$http.get("data/getQuestions.php")
+	// Assign First Question
+	$scope.QuestionID = 1;
+	$scope.AnswerIDs = 1;
+
+	// Pull Question data
+	$http.get("includes/getQuestions.php")
 		.success(function(response) {
-			$scope.question = response
-			console.log("Questions: " + $scope.question);
+			$scope.Question = response[$scope.QuestionID].Text;
+			$scope.Questions = response;
+			$scope.QAnswers = response[$scope.QuestionID].AnswerID;
 		});
-	console.log("Questions: " + $scope.question);
-	console.log("CurrentID:" + $scope.CurrentQuestionID);
-	console.log("Word of the Day is: " + "bubbles");
+
+	// Get Answers data
+	$http.get("includes/getAnswers.php")
+		.success(function(response){
+			$scope.Answers = response;
+		});
 
 });

@@ -1,0 +1,8 @@
+<div class="text-center">
+	<div class="Question">
+		{{ Questions[QuestionID].Text }}
+	</div>
+	<div ng-repeat="AnswerIDs in Answers">
+		<div><a class="btn btn-lg" href="">{{Answers[AnswerIDs].text}}</a></div>
+	</div>
+</div>
